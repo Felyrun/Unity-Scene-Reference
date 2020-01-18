@@ -7,7 +7,7 @@ using UnityEditor;
 namespace UnityEngine.SceneManagement
 {
     [Serializable]
-    public class SceneReference : ISerializationCallbackReceiver
+    public struct SceneReference : ISerializationCallbackReceiver
     {
         #if UNITY_EDITOR
         [SerializeField] private SceneAsset asset;
